@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PHAMCONGHIEU_2210900101ModelStoreContainer" CdmEntityContainer="PHAMCONGHIEU_2210900101Entities">
+    <EntitySetMapping Name="Pch_Sach">
+      <EntityTypeMapping TypeName="PHAMCONGHIEU_2210900101Model.Pch_Sach">
+        <MappingFragment StoreEntitySet="Pch_Sach">
+          <ScalarProperty Name="Pch_MaSach" ColumnName="Pch_MaSach" />
+          <ScalarProperty Name="Pch_TenSach" ColumnName="Pch_TenSach" />
+          <ScalarProperty Name="Pch_SoTrang" ColumnName="Pch_SoTrang" />
+          <ScalarProperty Name="Pch_NamXB" ColumnName="Pch_NamXB" />
+          <ScalarProperty Name="Pch_MaTG" ColumnName="Pch_MaTG" />
+          <ScalarProperty Name="Pch_TrangThai" ColumnName="Pch_TrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pch_TacGia">
+      <EntityTypeMapping TypeName="PHAMCONGHIEU_2210900101Model.Pch_TacGia">
+        <MappingFragment StoreEntitySet="Pch_TacGia">
+          <ScalarProperty Name="Pch_MaTG" ColumnName="Pch_MaTG" />
+          <ScalarProperty Name="Pch_TenTacGia" ColumnName="Pch_TenTacGia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

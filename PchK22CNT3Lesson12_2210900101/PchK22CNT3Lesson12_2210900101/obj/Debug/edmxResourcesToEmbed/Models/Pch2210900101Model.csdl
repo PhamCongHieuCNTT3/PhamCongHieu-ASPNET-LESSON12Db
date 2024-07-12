@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PHAMCONGHIEU_2210900101Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Pch_Sach">
+    <Key>
+      <PropertyRef Name="Pch_MaSach" />
+    </Key>
+    <Property Name="Pch_MaSach" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Pch_TenSach" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pch_SoTrang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pch_NamXB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pch_MaTG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pch_TrangThai" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Pch_TacGia">
+    <Key>
+      <PropertyRef Name="Pch_MaTG" />
+    </Key>
+    <Property Name="Pch_MaTG" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Pch_TenTacGia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="PHAMCONGHIEU_2210900101Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Pch_Sach" EntityType="Self.Pch_Sach" />
+    <EntitySet Name="Pch_TacGia" EntityType="Self.Pch_TacGia" />
+  </EntityContainer>
+</Schema>
